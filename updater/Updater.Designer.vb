@@ -32,9 +32,10 @@ Partial Class Updater
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(14, 32)
+        Me.ProgressBar1.Location = New System.Drawing.Point(28, 62)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(413, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(826, 44)
         Me.ProgressBar1.TabIndex = 0
         '
         'ErrorProvider1
@@ -45,20 +46,22 @@ Partial Class Updater
         '
         Me.lblupdating.AutoSize = True
         Me.lblupdating.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblupdating.Location = New System.Drawing.Point(175, 9)
+        Me.lblupdating.Location = New System.Drawing.Point(350, 17)
+        Me.lblupdating.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblupdating.Name = "lblupdating"
-        Me.lblupdating.Size = New System.Drawing.Size(77, 16)
+        Me.lblupdating.Size = New System.Drawing.Size(157, 31)
         Me.lblupdating.TabIndex = 1
         Me.lblupdating.Text = "Updating..."
         '
         'Updater
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(437, 78)
+        Me.ClientSize = New System.Drawing.Size(874, 150)
         Me.Controls.Add(Me.lblupdating)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Updater"
